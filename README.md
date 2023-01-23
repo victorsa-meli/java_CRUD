@@ -8,7 +8,7 @@
         The user is prompted to enter the product name, ID, price, and quantity. The Produto object is then added to a collection of Produto objects
         and the user is notified that the product has been successfully registered. The method then returns to the main menu.
 
-        ``` cadastrarProduto(); ```
+        ~~~Java cadastrarProduto(); ~~~
         
 
     buscarProduto
