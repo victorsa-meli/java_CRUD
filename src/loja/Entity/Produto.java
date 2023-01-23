@@ -10,12 +10,14 @@ public class Produto {
     public String nome;
     public Double preco;
 
-    public Produto(Integer id, String nome, Double preco) {
+    public Integer quantidade;
+
+    public Produto(Integer id, String nome, Double preco, Integer quantidade) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
+        this.quantidade = quantidade;
     }
-
 
     public Integer getId() {
         return id;
@@ -41,9 +43,17 @@ public class Produto {
         this.preco = preco;
     }
 
+    public Integer getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(Integer quantidade) {
+        this.quantidade = quantidade;
+    }
+
     @Override
     public String toString() {
-        return "ID: "+id+"\nProduto: "+nome+"\nPreço: "+preco+ " \n____________________________\n";
+        return "ID: "+id+"\nProduto: "+nome+"\nPreço: "+preco+"\nQuantidade: "+quantidade +" \n\n\n";
     }
 
 
